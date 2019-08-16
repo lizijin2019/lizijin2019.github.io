@@ -4,7 +4,7 @@
 
 
 
-<html class="theme-next mist use-motion" lang="en">
+<html class="theme-next mist use-motion" lang="zh-CN，en">
 <head>
   <meta charset="UTF-8">
 <meta name="generator" content="Hexo 3.9.0">
@@ -55,11 +55,27 @@
   };
 </script>
 
+<script type="text/javascript">
+    // Wait for the page to load first
+    var _prevOnload = window.onload;
+    window.onload = function() {
+        var switchLang = document.getElementById("menu").getElementsByClassName("menu-item-switch_lang")[0].childNodes[0];
+            var href = window.location.href;
+            var indexOfEn = href.toLowerCase().indexOf('/en/');
+            if(indexOfEn !== -1) {
+                switchLang.href = href.replace('/en/', '/');
+            }
+            else {
+                switchLang.href = href.replace(/(^http[s]?:\/\/[a-z0-9.]*[:?0-9]*\/)(.*)/i, '$1en/$2');
+            }
+    }
+</script>
+
   <meta property="og:type" content="website">
 <meta property="og:title" content="Dr. Zijin Li&#39;s Website">
 <meta property="og:url" content="http://yoursite.com/archives/2019/09/index.html">
 <meta property="og:site_name" content="Dr. Zijin Li&#39;s Website">
-<meta property="og:locale" content="en">
+<meta property="og:locale" content="zh-CN，en">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Dr. Zijin Li&#39;s Website">
   <link rel="canonical" href="http://yoursite.com/archives/2019/09/">
@@ -113,7 +129,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN，en">
 
   <div class="container sidebar-position-left">
     <div class="headband"></div>
@@ -210,11 +226,25 @@
     <a href="mailto:zijin.li@mcgill.ca" rel="noopener" target="_blank"><i class="menu-item-icon fa fa-fw fa-envelope"></i> <br>Contact</a>
 
   </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-switch_lang">
+      
+    
+
+    <a href="/en" rel="section"><i class="menu-item-icon fa fa-fw fa-language"></i> <br>中文</a>
+
+  </li>
   </ul>
 
     
 
     
+    
+      
+      
     
       
       

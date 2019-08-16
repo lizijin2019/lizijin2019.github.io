@@ -4,7 +4,7 @@
 
 
 
-<html class="theme-next mist use-motion" lang="en">
+<html class="theme-next mist use-motion" lang="zh-CN，en">
 <head>
   <meta charset="UTF-8">
 <meta name="generator" content="Hexo 3.9.0">
@@ -55,11 +55,27 @@
   };
 </script>
 
+<script type="text/javascript">
+    // Wait for the page to load first
+    var _prevOnload = window.onload;
+    window.onload = function() {
+        var switchLang = document.getElementById("menu").getElementsByClassName("menu-item-switch_lang")[0].childNodes[0];
+            var href = window.location.href;
+            var indexOfEn = href.toLowerCase().indexOf('/en/');
+            if(indexOfEn !== -1) {
+                switchLang.href = href.replace('/en/', '/');
+            }
+            else {
+                switchLang.href = href.replace(/(^http[s]?:\/\/[a-z0-9.]*[:?0-9]*\/)(.*)/i, '$1en/$2');
+            }
+    }
+</script>
+
   <meta property="og:type" content="website">
 <meta property="og:title" content="Dr. Zijin Li&#39;s Website">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="Dr. Zijin Li&#39;s Website">
-<meta property="og:locale" content="en">
+<meta property="og:locale" content="zh-CN，en">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Dr. Zijin Li&#39;s Website">
   <link rel="canonical" href="http://yoursite.com/">
@@ -113,7 +129,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN，en">
 
   <div class="container sidebar-position-left">
     <div class="headband"></div>
@@ -210,6 +226,17 @@
     <a href="mailto:zijin.li@mcgill.ca" rel="noopener" target="_blank"><i class="menu-item-icon fa fa-fw fa-envelope"></i> <br>Contact</a>
 
   </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-switch_lang">
+      
+    
+
+    <a href="/en" rel="section"><i class="menu-item-icon fa fa-fw fa-language"></i> <br>中文</a>
+
+  </li>
   </ul>
 
     
@@ -227,266 +254,14 @@
           <div id="content" class="content page-home">
             
   <section id="posts" class="posts-expand">
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/09/main/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Zehao Wang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Dr. Zijin Li's Website">
-    </span>
-      <header class="post-header">
-
+    
+                   // Edited
         
-          <h1 class="post-title" itemprop="name headline">
-              
-              <a href="/2019/08/09/main/" class="post-title-link" itemprop="url">Hello!</a>
-            
-          </h1>
+              // Edited
+    
+                   // Edited
         
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              
-                
-              
-
-              <time title="Created: 2019-08-09 15:03:39" itemprop="dateCreated datePublished" datetime="2019-08-09T15:03:39+08:00">2019-08-09</time>
-            </span>
-          
-            
-
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-08-13 03:02:45" itemprop="dateModified" datetime="2019-08-13T03:02:45+08:00">2019-08-13</time>
-              </span>
-            
-          
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-            <p><font size="5"><strong>This is Dr. Zijin Li’s Website!</strong> </font></p>
-<p><font color="##dd0000," size="8"><strong>Highlight!</strong> </font></p>
-<p><font color="##dd0000," size="5"><strong>Our workshop for Duxianqin is coming soon!</strong></font></p>
-<p><font color="##dd0000," size="5"><strong>Details are as follows.</strong></font></p>
-
-          
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-          <div class="post-eof"></div>
-        
-      </footer>
-  </div>
-  
-  
-  
-  </article>
-
-    
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/16/workshop-for-dxq/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Zehao Wang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Dr. Zijin Li's Website">
-    </span>
-      <header class="post-header">
-
-        
-          <h1 class="post-title" itemprop="name headline">
-              
-              <a href="/2019/09/16/workshop-for-dxq/" class="post-title-link" itemprop="url">Cross-cultural Workshop on Reimagining Traditional Music Instruments through Digital Technologies</a>
-            
-          </h1>
-        
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              
-                
-              
-
-              <time title="Created: 2019-09-16 00:00:00" itemprop="dateCreated datePublished" datetime="2019-09-16T00:00:00+08:00">2019-09-16</time>
-            </span>
-          
-            
-
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-08-13 02:39:19" itemprop="dateModified" datetime="2019-08-13T02:39:19+08:00">2019-08-13</time>
-              </span>
-            
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Projects/" itemprop="url" rel="index"><span itemprop="name">Projects</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-            <h1 id="Cross-cultural-Workshop-on-Reimagining-Traditional-Music-Instruments-through-Digital-Technologies"><a href="#Cross-cultural-Workshop-on-Reimagining-Traditional-Music-Instruments-through-Digital-Technologies" class="headerlink" title="Cross-cultural Workshop on Reimagining Traditional Music Instruments through Digital Technologies"></a>Cross-cultural Workshop on Reimagining Traditional Music Instruments through Digital Technologies</h1><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>The workshop will focus on the Duxianqin, a traditional a Solo String instrument popular in southern Guangxi and Vietnam, and explore the use of Digital Music Technology and Interaction Design to reimagine this one-stringed traditional instrument in a creative way.</p>
-<p>Participants in the workshop will include Queen Mary University of London (QMUL) Media and Arts Technology (MAT) Centre, Central Conservatory of Music AI Muisc &amp; Music technology Department，China Conservatory of Music，Ministry of Culture Non-material Cultural Heritage,  Shanghai Conservatory of Theater, Tongji University, Beijing University, China Geosciences University etc.</p>
-<p>Participants are responsible in small groups for a specific part of the project, such as the shape design of the instrument, sound synthesis, sensor data acquisition, interactive design, etc.</p>
-<h2 id="Objectives-of-the-Workshop"><a href="#Objectives-of-the-Workshop" class="headerlink" title="Objectives of the Workshop"></a>Objectives of the Workshop</h2><ul>
-<li>To study the cultural and social background of the solo stringed instrument, as well as its performance characteristics and performance techniques;</li>
-<li>Explore common techniques for designing Digital Musical Instruments, such as sensors, microcontrollers, sound modeling and composition techniques, to enhance the design of the Duxianqin (adding functionality to the original instrument) or redesigning (retaining only its core functions and other parts redesigned);</li>
-<li>Study how people interact with the re-imagined Duxianqin after re-design;</li>
-<li>The workshop end with an exhibition or concert to be presented to the public.</li>
-</ul>
-<h2 id="Design-Explorations"><a href="#Design-Explorations" class="headerlink" title="Design Explorations"></a>Design Explorations</h2><p>Digital Music Technologies and Interaction Design will be used to explore design challenges of:</p>
-<ul>
-<li><em>Size</em>: how to create a physically smaller Duxianqin yet with equal sound control;</li>
-<li><em>Sound</em>: how to produce a wider range of sounds and/ or polyphony;</li>
-<li><em>Ease of play</em>: using techniques such as quantization to reduce precision needed to play Duxianqin;</li>
-<li><em>Learnability</em>: augment Duxianqin with interactive displays to provide feedback on playing.</li>
-</ul>
-<h2 id="Workshop-Schedule"><a href="#Workshop-Schedule" class="headerlink" title="Workshop Schedule"></a>Workshop Schedule</h2><p>The workshop structure will be modified version of the Qi2He 起承转合 (Qǐ-Chéng-Zhuǎn-Hé) co-creation process (Bryan-Kinns et al., 2018).</p>
-<h3 id="Day-1-2019-09-16-Guqin-base-Reciprocal-cultural-immersion"><a href="#Day-1-2019-09-16-Guqin-base-Reciprocal-cultural-immersion" class="headerlink" title="Day 1(2019.09.16) (Guqin base) Reciprocal cultural immersion"></a>Day 1(2019.09.16) (Guqin base) Reciprocal cultural immersion</h3><ul>
-<li>09:00 Travel to Guqin base (1.5 hours)</li>
-<li>10:30 Duxianqin cultural immersion</li>
-<li>12:30 Lunch</li>
-<li>13:30 Duxianqin learning</li>
-<li>15:00 Tea &amp; Discussion</li>
-<li>16:00 Digital music immersion (demos)</li>
-<li>17:30 Dinner</li>
-<li>Travel back (1.5 hours)</li>
-</ul>
-<h3 id="Day-2-2019-09-17-CCoM-Co-design"><a href="#Day-2-2019-09-17-CCoM-Co-design" class="headerlink" title="Day 2 (2019.09.17)(CCoM): Co-design"></a>Day 2 (2019.09.17)(CCoM): Co-design</h3><ul>
-<li>09:30 Arrival</li>
-<li>10:00 Start: Group discussion and brainstorming for digitally reimagining the Duxianqin</li>
-<li>12:00 Lunch</li>
-<li>13:00 Group discussion and brainstorming for digitally reimagining the Duxianqin</li>
-<li>15:00 Tea time</li>
-<li>16:00 Identify people in design team, and set design/ build work activities.</li>
-<li>18:00 Finish</li>
-</ul>
-<h3 id="Day-3-2019-09-18-CCoM"><a href="#Day-3-2019-09-18-CCoM" class="headerlink" title="Day 3 (2019.09.18)(CCoM)"></a>Day 3 (2019.09.18)(CCoM)</h3><ul>
-<li>Digital reimagining design and implementation</li>
-<li>Performance and music creation</li>
-</ul>
-<h3 id="Day-4-2019-09-19-CCoM"><a href="#Day-4-2019-09-19-CCoM" class="headerlink" title="Day 4 (2019.09.19)(CCoM)"></a>Day 4 (2019.09.19)(CCoM)</h3><ul>
-<li>Digital reimagining design and implementation</li>
-<li>Performance and music creation</li>
-</ul>
-<h3 id="Day-5-2019-09-20-CCoM-Rehearsal-reflection-and-performance"><a href="#Day-5-2019-09-20-CCoM-Rehearsal-reflection-and-performance" class="headerlink" title="Day 5 (2019.09.20)(CCoM): Rehearsal, reflection, and performance"></a>Day 5 (2019.09.20)(CCoM): Rehearsal, reflection, and performance</h3><ul>
-<li>10:00 Rehearsal &amp; Refinement</li>
-<li>12:00 Lunch</li>
-<li>13:00 Reflection on design and development process</li>
-<li>15:00 Tea &amp; Contingency time</li>
-<li>17:00 Performance set up</li>
-<li>18:00 Mini-Performance with reimagined Duxianqin (30 mins)</li>
-</ul>
-<h4 id="Performances"><a href="#Performances" class="headerlink" title="Performances"></a>Performances</h4><ul>
-<li>Traditional music with traditional Duxianqin and/ or Erhu or other traditional instrument</li>
-<li>Modern music with reimagined Duxianqin</li>
-<li>Electronic music (Chinese performer)</li>
-</ul>
-<h2 id="Appendix"><a href="#Appendix" class="headerlink" title="Appendix"></a>Appendix</h2><h3 id="About-the-Duxianqin"><a href="#About-the-Duxianqin" class="headerlink" title="About the Duxianqin"></a>About the Duxianqin</h3><p>Duxianqin (“独弦琴”, meaning “single-string instrument”) is interesting as it is a plucked string instrument with only one string and an unusual pitch modulation mechanism for the left hand. It is a traditional musical instrument played in very southern part of China (Guangxi province) and in Vietnam by Jing(京) people. The instrument can be played either as solo, singing accompaniment or in ensemble. Originating from ancient times, the music of Duxianqin usually tells wishes and hopes for better life, love stories and hymn for their hometown.</p>
-<h3 id="Related-Materials"><a href="#Related-Materials" class="headerlink" title="Related Materials"></a>Related Materials</h3><ul>
-<li><p><a href="http://eecs.qmul.ac.uk/~nickbk/Duxianqin19/pdfs/Duxianqin_playing.pdf" target="_blank" rel="noopener">Duxianqin playing guide</a></p>
-</li>
-<li><p><a href="http://eecs.qmul.ac.uk/~nickbk/Duxianqin19/pdfs/slowqin.pdf" target="_blank" rel="noopener">Slowqin research paper</a></p>
-</li>
-<li><p><a href="http://eecs.qmul.ac.uk/~nickbk/Duxianqin19/pdfs/DANBAU_PhD.pdf" target="_blank" rel="noopener">Lisa Beebe’s PhD on the Vietnamese Dan Bau (Duxianqin)</a></p>
-</li>
-<li><p>Bryan-Kinns, N., Wang, W., &amp; Ji, T. (2018). Exploring Interactivity and Co-Creation in Rural China. <a href="https://academic.oup.com/iwc/advance-article/doi/10.1093/iwc/iwy010/4993736?guestAccessKey=5a7404af-eea0-4154-8a78-c2ab7dff8204" target="_blank" rel="noopener">Interacting with Computers</a>. Oxford University Press. <a href="http://eecs.qmul.ac.uk/~nickbk/Duxianqin19/pdfs/BryanKinns_Wang_Ji_2018_Exploring_Interactivity_IwC.pdf" target="_blank" rel="noopener">{pdf}</a></p>
-</li>
-<li><p>Wang, W., Bryan-Kinns, N., &amp; Ji, T. (2016). Using community engagement to drive co-creation in rural China. <a href="http://www.ijdesign.org/ojs/index.php/IJDesign/article/view/2458/722" target="_blank" rel="noopener">International Journal of Design</a>, 10(1), 37-52. <a href="http://eecs.qmul.ac.uk/~nickbk/Duxianqin19/pdfs/Wang_Bryan-Kinns_Ji_2016_CoCreativity_in_Rural_China_IJD.pdf" target="_blank" rel="noopener">{pdf}</a></p>
-</li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-          <div class="post-eof"></div>
-        
-      </footer>
-  </div>
-  
-  
-  
-  </article>
-
+              // Edited
     
   </section>
 
